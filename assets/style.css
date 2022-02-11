@@ -114,3 +114,51 @@ nav {
   padding: 20px
 }
 
+/* section-three ---------------------------------------------- */
+
+.container-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.section-three{
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -3;
+  width: 90%;
+}
+
+.section-three-image {
+  align-self: flex-end;
+  position: relative;
+  z-index: -2;
+}
+
+.container-three-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+  box-sizing: border-box;
+  padding: 50px 30px 70px 30px;
+}
+
+.container-three-text h2 {
+  color: white;
+  font-size: 35px
+}
+
+
+
+
+
+
