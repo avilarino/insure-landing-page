@@ -349,14 +349,7 @@ nav {
     align-self: flex-end;
     position: relative;
     z-index: -2;
-  
-    
-
   }
-
-  
-
-
 
 
 
@@ -490,12 +483,15 @@ nav {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding-bottom: 50px;
+    text-align: flex-start;
+    
   }
 
   .footer-text{
     text-align: start;
+    align-items: flex-start;
   }
 
 } 
