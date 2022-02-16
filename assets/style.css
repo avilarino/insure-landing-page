@@ -8,8 +8,30 @@
   font-family: 'DM Serif Display', serif;
 }
 
+/* backgrounds ------------- */
+
+.article-one-bg-desktop {
+  display: none;
+}
+
+.section-three-bg-desktop{
+  display: none;
+}
+
+.footer-bg-desktop {
+  display: none;
+}
+
+.article-one-bg-two-desktop{
+  display: none;
+}
 
 
+
+
+/*-----------------------------*/
+
+/* Layouts ---------------------------*/
 
 .txt-headings{
   font-family: 'DM Serif Display', serif;
@@ -138,9 +160,6 @@ nav {
   margin-top: 0;
 }
 
-.article-one-bg-desktop{
-  display: none;
-}
 
 .article-one-bg-two{
   align-self: flex-end;
@@ -183,8 +202,6 @@ nav {
   font-size: 35px;
 }
 
-
-
 .section-two {
   display: flex;
   flex-direction: column;
@@ -212,10 +229,10 @@ nav {
   position: relative;
   z-index: -3;
   width: 90%;
-  padding-bottom: 50px
+ 
 }
 
-.section-three-image {
+.section-three-bg {
   align-self: flex-end;
   position: relative;
   z-index: -2;
@@ -253,7 +270,7 @@ nav {
   background-color: hsl(0, 0%, 98%);
 }
 
-.footer-image {
+.footer-bg {
   position: absolute;
 }
 
@@ -285,8 +302,76 @@ nav {
 
 @media screen and (min-width: 375px) {
 
+  /* backgrounds */
+  .article-one-bg{
+    display: none;
+  }
+  .article-one-bg-desktop{
+    display: block;
+    position: relative;
+    z-index: -2;
+    margin-top: 0;
+  }
+
+  .section-three-bg {
+    display: none;
+    align-self: flex-end;
+    position: relative;
+    z-index: -2;
+  }
+
+  .section-three-bg-desktop {
+    align-self: flex-end;
+    position: relative;
+    z-index: -2;
+    display: block;
+  }
+
+  .footer-bg {
+    display: none;
+  }
+
+  .footer-bg-desktop{
+    display: block;
+    position: absolute;
+  }
+
+  .article-one-bg{
+    display: none;
+  }
+
+  .article-one-bg-two{
+    display: none;
+  }
+
+  .article-one-bg-two-desktop{
+    display: block;
+    align-self: flex-end;
+    position: relative;
+    z-index: -2;
+  
+    
+
+  }
+
+  
+
+
+
+
+
+  /*-----------------------------*/
+
   nav {
     padding: 5px;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .nav-burguer {
+    display: none;
   }
 
   .section-one {
@@ -334,10 +419,6 @@ nav {
     width: 40%;
   }
 
-
-  
-
-  
 
  
   /* --- */
