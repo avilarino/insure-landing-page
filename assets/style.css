@@ -31,6 +31,31 @@
   margin-right: 10px
 }
 
+.button-white{
+  border: 1px solid white;
+  padding: 10px 35px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.button-black {
+  border: 1px solid hsl(270, 9%, 17%);
+  padding: 5px 15px;
+  text-decoration: none;
+  color: hsl(270, 9%, 17%);
+  font-family: 'Karla', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+
 /* nav --------------------------------------------------------------- */
 
 nav {
@@ -41,8 +66,40 @@ nav {
   padding: 24px;
 }
 
+.nav-burguer {
+  display: block;
+}
+
+.nav-menu a {
+  font-size: 12px;
+  color:hsl(270, 9%, 17%);;
+}
+
+.nav-menu {
+  display: none;
+  margin-right: 50px;
+}
+
+.nav-menu a {
+  margin-right: 30px;
+  text-decoration: none;
+}
+
 
 .nav-desktop{
+  display: none;
+}
+
+.blue-line {
+  width: 30%;
+  margin-top: 50px;
+  border-top: 1px solid hsl(216, 30%, 68%);
+}
+
+.white-line {
+  width: 30%;
+  margin-top: 50px;
+  border-top: 1px solid white;
   display: none;
 }
 
@@ -96,29 +153,22 @@ nav {
   display: none;
 }
 
+.article-one-text-image {
+  position: absolute;
+}
+
 .article-one-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: -2;
   padding: 90px 20px 95px 20px;
   box-sizing: border-box;
 }
 
-.button-white{
-  border: 1px solid #ffffff;
-  padding: 10px 35px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-}
 
 /* section- two -----------------------------------------*/
 
@@ -133,11 +183,7 @@ nav {
   font-size: 35px;
 }
 
-.blue-line {
-  width: 30%;
-  margin-top: 50px;
-  border-top: 1px solid hsl(216, 30%, 68%);
-}
+
 
 .section-two {
   display: flex;
@@ -238,27 +284,44 @@ nav {
 }
 
 @media screen and (min-width: 375px) {
+
+  nav {
+    padding: 5px;
+  }
+
+  .section-one {
+    margin-bottom: 200px;
+  }
   
   .image-intro{
     display: none;
   }
 
+  .white-line {
+    display: block;
+  }
+
 
   .image-intro-desktop{
     display: block;
+    position: relative;
+    top: 150px;
+    right: 200px;
     width: 30%;
   }
 
   .section-one {
-    height: 50vh;
+    height: 60vh;
   }
 
 
   .article-one-text-image {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+
     
   }
 
@@ -266,7 +329,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    width: 40%;
   }
+
+
+  
 
   
 
